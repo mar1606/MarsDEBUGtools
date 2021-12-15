@@ -3,7 +3,7 @@
 #表示モード：HP
     #bossbar作成/削除
     execute as @a[tag=m.view_HP] at @s if entity @e[tag=Mob,distance=..20] run bossbar add mars:tusb_status_hp {"text":"error"}
-    execute as @a[tag=m.view_HP] at @s if entity @e[tag=Mob,distance=..20] run bossbar set mars:tusb_status_hp color white
+    execute as @a[tag=m.view_HP] at @s if entity @e[tag=Mob,distance=..20] run bossbar set mars:tusb_status_hp color green
     execute as @a[tag=m.view_HP] at @s unless entity @e[tag=Mob,distance=..20] run bossbar remove mars:tusb_status_hp
     #だれが見るか
     bossbar set mars:tusb_status_hp players @a[tag=m.view_HP]
