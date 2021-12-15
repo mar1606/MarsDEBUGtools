@@ -10,7 +10,7 @@
 
 ## TUSBMOBのステータス表示
 
-1. データパックをダウンロードしてfunctionフォルダに突っ込む。
+1. データパックをダウンロードして解答し、functionフォルダに突っ込む。
 2. ワールド開いたらチャット欄で **/function m.debug_items:tusb_mobs_status/tags/add_view_hp** を実行。HPが表示されます。
 4. **/function m.debug_items:tusb_mobs_status/tags/add_view_mp** を実行するとMPがボスバーに表示されます。
 
