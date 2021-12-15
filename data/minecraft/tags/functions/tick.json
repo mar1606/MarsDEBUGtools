@@ -1,5 +1,5 @@
 {
     "values": [
-        "m.debug_items:tick"
+        "m.debug:tick"
     ]
 }

@@ -1,1 +1,1 @@
-function m.debug_items:tusb_mobs_status/repeat
+function m.debug:tusb_mobs_status/repeat
