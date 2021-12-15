@@ -32,5 +32,6 @@ TUSBのMOBの半径20マスに入るとステータスがボスバーとして�
 
 * m.view_HP
 * m.view_MP
+* m.bossbar_view
 * mars:tusb_status_hp
 * mars:tusb_status_mp
