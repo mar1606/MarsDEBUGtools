@@ -11,9 +11,12 @@
 ## TUSBMOBのステータス表示
 
 1. データパックをダウンロードして解凍し、functionフォルダに突っ込む。
-2. ワールド開いたらチャット欄で **/function m.debug:tusb_mobs_status/tags/add_view_hp** を実行。HPが表示されます。
+2. ワールド開いたらチャット欄で **function m.debug:tusb_mobs_status/tags/add_view_hp** を実行。HPが表示されます。
+3. **function m.debug:tusb_mobs_status/tags/add_view_mp** でMPが表示されます。
 
-execute as @p run等でコマブロで入力もあり
+execute as @p run等でコマブロで入力もあり。
+
+どちらを実行しようが、HP,MPの表示はできますが、ボスバーでわかりやすくできるのはどちらか一方のみです。
 
 これでステータス表示の準備完了。
 
