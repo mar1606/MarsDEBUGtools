@@ -13,13 +13,14 @@
 
 #表示モード：MP
     #bossbar作成/削除
-    execute as @a[tag=m.view_MP] at @s if entity @e[tag=Mob,distance=..20,tag=m.mob_view,tag=m.mob_view] run function m.debug:tusb_mobs_status/bossbar_mp_add
-    execute as @a[tag=m.view_MP] at @s unless entity @e[tag=Mob,distance=..20,tag=m.mob_view,tag=m.mob_view] run bossbar remove mars:tusb_status_mp
-    execute as @a[tag=m.view_MP] at @s unless entity @e[tag=Mob,distance=..20,tag=m.mob_view,tag=m.mob_view] run tag @a remove m.bossbar_view_mp
+    execute as @a[tag=m.view_MP] at @s if entity @e[tag=Mob,distance=..20,tag=m.mob_view] run function m.debug:tusb_mobs_status/bossbar_mp_add
+    execute as @a[tag=m.view_MP] at @s unless entity @e[tag=Mob,distance=..20,tag=m.mob_view] run bossbar remove mars:tusb_status_mp
+    execute as @a[tag=m.view_MP] at @s unless entity @e[tag=Mob,distance=..20,tag=m.mob_view] run tag @a remove m.bossbar_view_mp
     #だれが見るか
     bossbar set mars:tusb_status_mp players @a[tag=m.view_MP]
     #上のテキスト表示
-    execute as @a[tag=m.view_MP] at @s run bossbar set mars:tusb_status_mp name [{"text":"[","color":"red","bold":true},{"selector":"@e[tag=Mob,sort=nearest,limit=1,tag=m.mob_view]","separator":"//","color":"red"},{"text":"]"},{"text":"   MP","color":"dark_gray","bold":false},{"text":"：","color":"white"},{"score":{"name":"@e[tag=Mob,sort=nearest,limit=1,tag=m.mob_view]","objective":"MP"},"color":"green","bold":false},{"text":"   HP:","color":"gray","bold":false},{"score":{"name":"@e[tag=Mob,sort=nearest,limit=1,tag=m.mob_view]","objective":"HP"},"color":"gray","bold":false}]
+    execute as @a[tag=m.view_MP] at @s if entity @e[tag=Mob,sort=nearest,distance=..20,scores={MP=0..}] run bossbar set mars:tusb_status_mp name [{"text":"[","color":"red","bold":true},{"selector":"@e[tag=Mob,sort=nearest,limit=1,tag=m.mob_view]","separator":"//","color":"red"},{"text":"]"},{"text":"   MP","color":"dark_gray","bold":false},{"text":"：","color":"white"},{"score":{"name":"@e[tag=Mob,sort=nearest,limit=1,tag=m.mob_view]","objective":"MP"},"color":"green","bold":false},{"text":"   HP:","color":"gray","bold":false},{"score":{"name":"@e[tag=Mob,sort=nearest,limit=1,tag=m.mob_view]","objective":"HP"},"color":"gray","bold":false}]
+    execute as @a[tag=m.view_MP] at @s if entity @e[tag=Mob,sort=nearest,distance=..20,scores={MP=..0}] run bossbar set mars:tusb_status_mp name [{"text":"[","color":"red","bold":true},{"selector":"@e[tag=Mob,sort=nearest,limit=1,tag=m.mob_view]","separator":"//","color":"red"},{"text":"]"},{"text":"   MP","color":"dark_gray","bold":false},{"text":"：","color":"white"},{"text":"0","color":"red","bold":false},{"text":"   HP:","color":"gray","bold":false},{"score":{"name":"@e[tag=Mob,sort=nearest,limit=1,tag=m.mob_view]","objective":"HP"},"color":"gray","bold":false}]
 
 #対象モブを設定
     #Add
