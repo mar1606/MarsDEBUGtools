@@ -9,7 +9,7 @@ execute unless predicate m.debug:m.sneak run gamemode survival @s[tag=m.in_creat
 execute if predicate m.debug:m.sneak run gamemode adventure @s[tag=m.in_creative]
 
 #最後に雪玉を返却
-item replace entity @s[tag=m.in_creative] weapon with snowball{display:{Name:'{"text":"Switch gamemode","color":"aqua"}',Lore:['{"text":"右クリック","color":"dark_red"}','{"text":"クリエイティブに変更","color":"gray"}','{"text":"シフト＋右クリック","color":"dark_red"}','{"text":"2秒間スペクテイターに変更","color":"gray"}']}} 1
+item replace entity @s[tag=m.in_creative] weapon with snowball{display:{Name:'{"text":"Switch gamemode","color":"aqua"}',Lore:['{"text":"右クリック","color":"dark_red"}','{"text":"クリエイティブに変更","color":"gray"}','{"text":"シフト＋右クリック","color":"dark_red"}','{"text":"3秒間スペクテイターに変更","color":"gray"}']}} 1
 
 
 #タグ消去
