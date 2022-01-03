@@ -1,3 +1,5 @@
+#実行元>>m.debug:useful_tools/check
+
 ##adventure or survival→creative or spectator
 
 #雪玉kill
