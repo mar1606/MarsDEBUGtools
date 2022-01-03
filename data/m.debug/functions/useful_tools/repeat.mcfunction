@@ -41,5 +41,3 @@ execute as @a[scores={m.use_snowball=1..}] at @s run function m.debug:useful_too
     #無敵状態の人
     execute as @a[tag=m.invincible_effect,nbt={SelectedItem:{id:"minecraft:snowball",Count:1b,tag:{display:{Name:'{"text":"recovery health","color":"green"}',Lore:['{"text":"右クリック","color":"dark_red"}','{"text":"体力をたくさん回復","color":"gray"}','{"text":"シフト＋右クリック","color":"dark_red"}','{"text":"無敵になる","color":"gray"}']}}}}] run item replace entity @s weapon with snowball{display:{Name:'{"text":"recovery health","color":"green"}',Lore:['{"text":"シフト＋右クリック","color":"dark_red"}','{"text":"無敵状態を消す","color":"gray"}']}} 1
 
-#test
-#execute if entity @e[type=snowball,nbt={Item:{id:"minecraft:snowball",Count:1b,tag:{display:{Name:'{"text":"recovery health","color":"green"}',Lore:['{"text":"右クリック","color":"dark_red"}','{"text":"体力をたくさん回復","color":"gray"}','{"text":"シフト＋右クリック","color":"dark_red"}','{"text":"無敵になる","color":"gray"}']}}}}] run say 回復できるはずだけどこれはデバッグ
