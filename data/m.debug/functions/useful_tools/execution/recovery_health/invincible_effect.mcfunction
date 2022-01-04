@@ -3,8 +3,8 @@
 ##バニラの攻撃では死なないエフェクトを！
 
 #無敵にしてやんよ！(とりあえずつけとけ)
-    effect give @s resistance 1 5 true
-    effect give @s fire_resistance 1 3 true
+    effect give @s resistance 3 5 true
+    effect give @s fire_resistance 3 3 true
 #デバフ削除
     #不吉な予感
     effect clear @s bad_omen
@@ -29,5 +29,5 @@
     #ウィザー
     effect clear @s wither
 #回復
-    effect give @s instant_health 1 100 true
-    effect give @s saturation 1 100 true
+    effect give @s instant_health 3 100 true
+    effect give @s saturation 3 100 true
