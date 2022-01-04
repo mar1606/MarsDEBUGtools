@@ -40,6 +40,19 @@ TUSBのMOBの半径20マスに入るとステータスがボスバーとして�
 
 * アイテムを持ってshift+右クリックで約3秒間スペクテイターに。
 
+
+## Recovery health
+
+回復したり...自身を無敵にしたり...
+
+### 使い方
+
+* アイテムを持って右クリックで回復
+
+* アイテムを持ってshift+右クリックで無敵状態になる。
+
+* 無敵状態のときにアイテムを持ってshift+右クリックで無敵状態を解除。
+
 # 注意点
 
 使う上での注意点を少し。
@@ -58,3 +71,6 @@ TUSBのMOBの半径20マスに入るとステータスがボスバーとして�
 * mars:tusb_status_mp
 * m.in_adventure
 * m.in_creative
+* m.invincible_effect
+* m.idiot
+* m.invincible
