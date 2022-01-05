@@ -6,6 +6,7 @@
 kill @e[type=snowball,nbt={Item:{id:"minecraft:snowball",Count:1b,tag:{display:{Name:'{"text":"recovery health","color":"green"}',Lore:['{"text":"右クリック","color":"dark_red"}','{"text":"体力をたくさん回復","color":"gray"}','{"text":"シフト＋右クリック","color":"dark_red"}','{"text":"無敵になる","color":"gray"}']}}}},distance=..3]
 #右クリックのみ
 execute unless predicate m.debug:m.sneak run effect give @s[tag=m.idiot] instant_health 3 250 true
+execute unless predicate m.debug:m.sneak run effect give @s[tag=m.idiot] saturation 3 200 true
 
 #シフト＋右クリック
 execute if predicate m.debug:m.sneak run tag @s[tag=m.idiot] add m.invincible_effect
